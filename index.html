@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="mk">
+<head>
+    <meta charset="utf-8">
+    <title>Pameten Dom - Kontrolen Panel</title>
+</head>
+<body>
+
+    <!-- Glavna stilizirana glava na stranata -->
+    <header>
+        <h1>Smart Home Dashboard</h1>
+        <p>Kontrolen panel za sledenje na senzori vo domot</p>
+        <hr>
+    </header>
+
+    <!-- Brza navigacija niz sobite -->
+    <nav>
+        <h3>Meni:</h3>
+        <ul>
+            <li><a href="#spalna">Spalna soba</a></li>
+            <li><a href="#dnevna">Dnevna soba</a></li>
+            <li><a href="#kujna">Kujna</a></li>
+            <li><a href="#gradina">Gradina</a></li>
+            <li><a href="#notifikacii">Notifikacii</a></li>
+        </ul>
+        <hr>
+    </nav>
+
+    <main>
+
+        <!-- 1. SPALNA -->
+        <section id="spalna">
+            <h2>1. Spalna soba</h2>
+
+            <article>
+                <h4>Termometar</h4>
+                <p>Status: <input type="checkbox" checked disabled> Aktiven</p>
+                <p>Baterija: <progress value="85" max="100"></progress> 85%</p>
+                <p>Tekovna temperatura: <output>19°C</output></p>
+            </article>
+
+            <article>
+                <h4>Vlaznost na vozduh</h4>
+                <p>Status: <input type="checkbox" checked disabled> Aktiven</p>
+                <p>Baterija: <progress value="40" max="100"></progress> 40%</p>
+                <p>Nivo: <meter value="0.55" min="0" max="1">55%</meter></p>
+            </article>
+
+            <article>
+                <h4>Nokno svetlo</h4>
+                <p>Status: <input type="checkbox" disabled> Isklucen</p>
+                <p>Baterija: <progress value="15" max="100"></progress> 15%</p>
+                <p>Dimer (jacina): <input type="range" min="0" max="100" value="0" disabled></p>
+            </article>
+            <hr>
+        </section>
+
+
+        <!-- 2. DNEVNA -->
+        <section id="dnevna">
+            <h2>2. Dnevna soba</h2>
+
+            <article>
+                <h4>Senzor za temperatura</h4>
+                <p>Status: <input type="checkbox" checked disabled> Aktiven</p>
+                <p>Baterija: <progress value="90" max="100"></progress> 90%</p>
+                <!-- Temperatura nadvor od normala (20-24C) -->
+                <p>Vrednost: <strong>26°C</strong> (Zabeleska: Nadvor od dozvolena zona)</p>
+            </article>
+
+            <article>
+                <h4>Senzor za CO2</h4>
+                <p>Status: <input type="checkbox" checked disabled> Aktiven</p>
+                <p>Baterija: <progress value="60" max="100"></progress> 60%</p>
+                <p>Koncentracija: <input type="number" value="1200" readonly> ppm</p>
+            </article>
+
+            <article>
+                <h4>LED Ambientalna lenta</h4>
+                <p>Status: <input type="checkbox" checked disabled> Aktiven</p>
+                <p>Baterija: <progress value="100" max="100"></progress> 100%</p>
+                <p>Segasna boja: <input type="color" value="#ff9900" disabled></p>
+            </article>
+            <hr>
+        </section>
+
+
+        <!-- 3. KUJNA -->
+        <section id="kujna">
+            <h2>3. Kujna</h2>
+
+            <article>
+                <h4>Detektor za cad</h4>
+                <p>Status: <input type="checkbox" checked disabled> Aktiven</p>
+                <p>Baterija: <progress value="20" max="100"></progress> 20%</p>
+                <p>Sostojba: <input type="text" value="Nema cad" readonly></p>
+            </article>
+
+            <article>
+                <h4>Senzor za pritisok na voda</h4>
+                <p>Status: <input type="checkbox" checked disabled> Aktiven</p>
+                <p>Baterija: <progress value="75" max="100"></progress> 75%</p>
+                <p>Pritisok: <meter value="4.2" min="0" max="5" low="1.5" high="4.0" optimum="2.5">4.2 bar</meter></p>
+            </article>
+
+            <article>
+                <h4>Senzor za dvizenje</h4>
+                <p>Status: <input type="checkbox" checked disabled> Aktiven</p>
+                <p>Baterija: <progress value="95" max="100"></progress> 95%</p>
+                <p>Posledna aktivnost: <time datetime="2026-10-14T21:45">21:45 c.</time></p>
+            </article>
+            <hr>
+        </section>
+
+
+        <!-- 4. GRADINA -->
+        <section id="gradina">
+            <h2>4. Gradina</h2>
+
+            <article>
+                <h4>Vlaznost na pocva</h4>
+                <p>Status: <input type="checkbox" checked disabled> Aktiven</p>
+                <p>Baterija: <progress value="10" max="100"></progress> 10%</p>
+                <p>Nivo na vlaznost: <meter value="0.15" min="0" max="1" low="0.3" high="0.8" optimum="0.6">15%</meter></p>
+            </article>
+
+            <article>
+                <h4>Tajmer za prskalki</h4>
+                <p>Status: <input type="checkbox" disabled> Isklucen</p>
+                <p>Baterija: <progress value="50" max="100"></progress> 50%</p>
+                <p>Zakazano vo: <input type="time" value="06:00" readonly></p>
+            </article>
+
+            <article>
+                <h4>Senzor za veter</h4>
+                <p>Status: <input type="checkbox" checked disabled> Aktiven</p>
+                <p>Baterija: <progress value="80" max="100"></progress> 80%</p>
+                <p>Brzina na veter: <input type="range" min="0" max="120" value="45" disabled> (45 km/h)</p>
+            </article>
+            <hr>
+        </section>
+
+
+        <!-- DEL SO NOTIFIKACII -->
+        <section id="notifikacii">
+            <h2>Alarmi i Notifikacii</h2>
+
+            <details>
+                <summary><strong>Predupreduvanje: Visoka temperatura vo dnevna</strong></summary>
+                <p>Temperaturata e 26°C, a dozvolenata granica e megju 20°C i 24°C. Se preporacuva vklucuvanje na klimata.</p>
+            </details>
+
+            <details>
+                <summary><strong>Predupreduvanje: Suva zemja vo gradina</strong></summary>
+                <p>Vlaznostata na pocvata padna na 15% (normalno treba da e nad 30%). Treba da se pustaat prskalkite.</p>
+            </details>
+
+            <details>
+                <summary><strong>Izvestuvanje: Prazna baterija - Senzor za pocva</strong></summary>
+                <p>Baterijata na senzorot za pocva e na 10%. Treba naskoro da se promeni.</p>
+            </details>
+
+            <details>
+                <summary><strong>Predupreduvanje: Zgolemen pritisok na voda</strong></summary>
+                <p>Pritisokot vo kujnskite cevki gi admina normalnite 4.0 bar (izmereni 4.2 bar).</p>
+            </details>
+        </section>
+
+    </main>
+
+    <footer>
+        <hr>
+        <p><small>&copy; 2026 - Domasna zadaca 1 po Osnovi na Web Programiranje</small></p>
+    </footer>
+
+</body>
+</html>
