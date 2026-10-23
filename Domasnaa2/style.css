@@ -1,0 +1,128 @@
+
+/* 1. Stiliziranje na celata stranica */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    color: #333333;
+    margin: 0;
+    padding: 20px;
+}
+
+/* 2. Glavna glava na stranata */
+header {
+    background-color: #234e70;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+/* 3. Naslov na kontrolniot panel */
+header h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+/* 4. Navigacisko meni */
+nav {
+    background-color: #dce8f2;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+/* 5. Lista vo navigacijata */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* 6. Linkovi vo navigacijata */
+nav a {
+    color: #234e70;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* 7. Promena na link pri pominuвање so mouse */
+nav a:hover {
+    color: #e67e22;
+}
+
+/* 8. Naslovi na sobite */
+section h2 {
+    background-color: #234e70;
+    color: white;
+    padding: 12px;
+    border-radius: 6px;
+}
+
+/* 9. Senzori vo sobite */
+article {
+    background-color: white;
+    border: 1px solid #cccccc;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 8px;
+}
+
+/* 10. Naslovi na senzorite */
+article h4 {
+    color: #234e70;
+    font-size: 18px;
+}
+
+/* 11. Podatoci za senzorite */
+article p {
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+/* 12. Vrednosti na senzorite */
+output {
+    color: #2980b9;
+    font-weight: bold;
+}
+
+/* 13. Baterija na senzorite */
+progress {
+    width: 150px;
+    height: 15px;
+}
+
+/* 14. Notifikacii */
+details {
+    background-color: #fff3cd;
+    border: 1px solid #e0b84c;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+}
+
+/* 15. Naslov na notifikacijata */
+summary {
+    color: #856404;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* 16. Tekst vo notifikaciite */
+details p {
+    color: #5c4b16;
+    line-height: 1.5;
+}
+
+/* 17. Footer na stranata */
+footer {
+    background-color: #234e70;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 25px;
+    border-radius: 8px;
+}
+
+/* 18. Horizontalni linii */
+hr {
+    border: 1px solid #cccccc;
+}
