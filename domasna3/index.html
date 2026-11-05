@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="mk">
+<head>
+    <meta charset="UTF-8">
+    <title>Formula 1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="startRace()">
+
+    <h1>FORMULA 1</h1>
+    <h2>Трка со 10 возачи и 10 круга</h2>
+
+    <p>Круг: <span id="lapNumber">0 / 10</span></p>
+    <p>Статус: <span id="raceStatus">Подготвени</span></p>
+    <p>Безбедносно возило: <span id="safetyCarStatus">Не</span></p>
+
+    <h2>Табела на возачи</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Позиција</th>
+                <th>Возач</th>
+                <th>Тим</th>
+                <th>Брзина</th>
+                <th>Вештина</th>
+                <th>Гуми</th>
+                <th>Вкупно време</th>
+                <th>Статус</th>
+            </tr>
+        </thead>
+
+        <tbody id="driversTable"></tbody>
+    </table>
+
+    <br>
+
+    <button id="nextButton" onclick="nextLap()">Следен круг</button>
+
+    <button id="autoButton" onclick="runRace()">
+        Изврши ja целата трка
+    </button>
+
+    <button onclick="startRace()">Нова трка</button>
+
+    <div id="winnerBox" style="display:none;">
+        <h2>Победник</h2>
+        <p id="winnerText"></p>
+    </div>
+
+    <h2>Тек на трката</h2>
+    <div id="raceLog"></div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
